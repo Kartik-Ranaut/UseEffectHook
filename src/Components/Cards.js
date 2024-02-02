@@ -1,12 +1,20 @@
 import React from 'react'
-
+import Card from './Card';
 export default function Cards(props) {
-    const data=[1,2,3]
+    let allData=[];
+    const getCourses=()=>{
+        Object.values(props.courses).forEach((courseCat)=>{
+            courseCat.forEach((course)=>{
+                allData.push(course);
+            })
+        });
+        return allData;
+    }
   return (
-    <div>
+    <div className='w-100vw flex flex-wrap gap-10 justify-center'>
         {
-            props.courses.map(()=>{
-                return(<button>Ram ji</button>);
+            getCourses().map((course)=>{
+                return(<Card {...course}></Card>);
             })
         }
     </div>
