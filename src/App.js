@@ -25,6 +25,7 @@ const App = () => {
   return <div>
     <Navbar></Navbar>
     <Filter filterdata={filterData}></Filter>
+    <br></br>
     <Cards courses={courses}></Cards>
   </div>;
 };
