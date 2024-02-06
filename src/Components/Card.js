@@ -3,7 +3,7 @@ import { FcLike } from "react-icons/fc";
 
 export default function Card(props) {
   function btnhandler(event){
-    event.target.style.backgroundColor="blue";
+    event.target.style.backgroundColor="red";
   }
   return (
     <div className='w-3/12 h-6/12  flex  flex-col'>
