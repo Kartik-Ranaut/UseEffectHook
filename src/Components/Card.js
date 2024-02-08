@@ -11,7 +11,7 @@ export default function Card(props) {
         <h1 className='text-xl font-bold'>{props.title}</h1>
         <p className='text-sm text-justify'>{props.description}</p>
         <button >
-        <FcLike onClick={btnhandler}></FcLike>
+          <FcLike onClick={btnhandler}></FcLike>
         </button>
     </div>
   )
