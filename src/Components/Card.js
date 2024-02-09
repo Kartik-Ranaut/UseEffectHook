@@ -4,6 +4,7 @@ import { FcLike } from "react-icons/fc";
 export default function Card(props) {
   function btnhandler(event){
     event.target.style.transform="scale(2)";
+    console.log('you have clicked');
   }
   return (
     <div className='w-3/12 h-6/12  flex  flex-col'>
