@@ -1,7 +1,7 @@
 import React from 'react'
 import { FcLike } from "react-icons/fc";
 import { toast } from 'react-toastify';
-import { Toast } from 'react-toastify/dist/components';}
+import { Toast } from 'react-toastify/dist/components';
 export default function Card(props) {
   function btnhandler(event){
     toast.success("Added to fabourites");
