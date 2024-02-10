@@ -1,10 +1,10 @@
 import React from 'react'
 import { FcLike } from "react-icons/fc";
-
+import { toast } from 'react-toastify';
+import { Toast } from 'react-toastify/dist/components';}
 export default function Card(props) {
   function btnhandler(event){
-    event.target.style.transform="scale(2)";
-    console.log('you have clicked');
+    toast.success("Added to fabourites");
   }
   return (
     <div className='w-3/12 h-6/12  flex  flex-col'>
