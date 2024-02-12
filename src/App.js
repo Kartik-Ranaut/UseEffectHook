@@ -22,6 +22,22 @@ const App = () => {
       }
       fetchData();
   },[])
+
+  function allHnadler(){
+    return
+  }
+  function development(){
+    return
+  }
+  function design(){
+    return
+  }
+  function business(){
+    return
+  }
+  function lifestyle(){
+    return
+  }
   return <div>
     <Navbar></Navbar>
     <Filter filterdata={filterData}></Filter>
