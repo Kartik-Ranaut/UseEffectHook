@@ -8,13 +8,15 @@ import {useEffect, useState} from 'react';
 
 const App = () => {
   const [courses,setcourses]=useState([]);
+  const [course,setcourse]=useState([]);
   useEffect(()=>{
       const fetchData = async()=>{
        try{ const res = await fetch(apiUrl);
         const data = await res.json();
         toast.success("done");
         console.log(data.data);
-        setcourses(data.data)
+        setcourses(data.data);
+        setcourse(data.data)
       }
         catch(error){
           toast.success("error");
@@ -24,7 +26,7 @@ const App = () => {
   },[])
 
   function allHnadler(){
-    return
+    setcourses(course.filter((element)=>{}))
   }
   function development(){
     return
