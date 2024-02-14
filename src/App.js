@@ -26,7 +26,6 @@ const App = () => {
   },[])
 
   function allHnadler(){
-    setcourses(course.filter((element)=>{}))
   }
   function development(){
     return
